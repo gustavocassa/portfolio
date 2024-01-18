@@ -1,0 +1,199 @@
+<!-- Tiene que tener un zoom de pagina del 140% para verse como es previsto -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio.css">
+    
+    <title>Mi Portfolio</title>
+</head>
+<body style="margin-top: 10px;">
+   
+    <div class="container">
+        <nav class="sidebar">
+            <div class="sidebar-info">
+                <div class="div-1"> 
+    
+            </div>                <br><br>
+                <ul>
+                    <li><a href="https://gustavocassa.github.io/projectoAUF2ba/">AUF | Proyecto Final 2023</a></li>
+                    <br>
+                    <li><a href="https://gustavocassa.github.io/mapaUruguay/uruguay.html">Mapa Vectorizado de Uruguay</a></li>
+                    <br>
+                    <li><a href="https://gustavocassa.github.io/redisenoWeb-1/ReplicaWeb1.html">Rediseño | 1</a></li>
+                    <br>
+                    <li><a href="https://gustavocassa.github.io/mormones/mormon.html">Mormones | Pagina de Amigos</a></li>
+                    <br>
+                    <li><a href="">Ejemplo</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="content-container">
+            <div class="top-text" >
+                <p style="text-decoration: underline; text-decoration-color: darkslategrey;">Portfolio</p>
+            </div>
+            <div class="portfolio" style="margin-top:150px;">
+                <div class="project" id="project1">
+                    <div class="project-image-container"><a href="https://gustavocassa.github.io/projectoAUF2ba/"><img src="img/paginas/AUF.PNG" alt="Proyecto 1" class="project-image"></a>
+                        <div class="project-info">
+                            <h3>AUF</h3>
+                            <p>Página Inspirada en la AUF.</p>
+                            <p>Fecha de realización: [20/11/2023]</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project" id="project2">
+                    <div class="project-image-container"><a href="https://gustavocassa.github.io/mapaUruguay/uruguay.html"><img src="img/paginas/mapaUruguay.png" alt="Proyecto 2" class="project-image"></a>
+                        <div class="project-info">
+                            <h3>Mapa Vectorizado de Uruguay</h3>
+                            <p>Mapa hecho para marcar zonas visitadas.</p>
+                            <p>Fecha de realización: [18/01/2024]</p>
+                        </div>
+                    </div>
+                </div>       
+                <div class="project" id="project3">
+                    <div class="project-image-container"><a href="https://gustavocassa.github.io/redisenoWeb-1/ReplicaWeb1.html"><img src="img/paginas/Rediseño1.PNG" alt="Proyecto 4" class="project-image"></a>
+                        <div class="project-info">
+                            <h3>Rediseño Web # 1</h3>
+                            <p>Práctica de Recreación de Páginas Web</p>
+                            <p>Fecha de realización: [23/12/2023]</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project" id="project4">
+                    <div class="project-image-container"><a href="https://gustavocassa.github.io/mormones/mormon.html"><img src="img/paginas/mormones.png" alt="Proyecto 3" class="project-image"></a>  
+                        <div class="project-info">
+                            <h3>Mormones</h3>
+                            <p>Pagina de Animes</p>
+                            <p>Fecha de realización: [5/01/2024]</p>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="project" id="project5">
+                    <div class="project-image-container">
+                        <a href=""><img src="img/paginas/ejemplo.webp" alt="Proyecto 5" class="project-image"></a>
+                        <div class="project-info">
+                            <h3>Proyecto 5</h3>
+                            <p>Descripción del Proyecto 5.</p>
+                            <p>Fecha de realización: [Fecha]</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project" id="project6">
+                    <div class="project-image-container">
+                        <img src="img/paginas/ejemplo.webp" alt="Proyecto 6" class="project-image">
+                        <div class="project-info">
+                            <h3>Proyecto 6</h3>
+                            <p>Descripción del Proyecto 6.</p>
+                            <p>Fecha de realización: [Fecha]</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project" id="project7">
+                    <div class="project-image-container">
+                        <img src="img/paginas/ejemplo.webp" alt="Proyecto 7" class="project-image">
+                        <div class="project-info">
+                            <h3>Proyecto 7</h3>
+                            <p>Descripción del Proyecto 7.</p>
+                            <p>Fecha de realización: [Fecha]</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project" id="project8">
+                    <div class="project-image-container">
+                        <img src="img/paginas/ejemplo.webp" alt="Proyecto 8" class="project-image">
+                        <div class="project-info">
+                            <h3>Proyecto 8</h3>
+                            <p>Descripción del Proyecto 8.</p>
+                            <p>Fecha de realización: [Fecha]</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+         
+            <div class="page-indicator" style="margin-bottom:85px;">
+                <button onclick="prevPage()" style="margin-left:10px;">Anterior</button>
+                <span id="currentPage" style="padding:10px;">1</span>/<span id="totalPages" style="padding:10px;">1</span>
+                <button onclick="nextPage()">Siguiente</button>
+            </div>
+            <p style="margin-bottom: 50px;">© Gustavo Cassanello</p> 
+
+        </div>
+    </div>
+    <script>
+   // scripts.js
+
+// Variable para almacenar la página actual
+let currentPage = 1;
+
+// Calcula el número total de páginas (asumiendo 4 proyectos por página)
+const totalProjects = document.querySelectorAll('.project').length;
+const projectsPerPage = 4;
+const totalPages = Math.ceil(totalProjects / projectsPerPage);
+
+// Función para mostrar u ocultar proyectos según la página actual
+function updateProjectsVisibility() {
+    const projects = document.querySelectorAll('.project');
+    const startIndex = (currentPage - 1) * projectsPerPage;
+
+    projects.forEach((project, index) => {
+        if (index >= startIndex && index < startIndex + projectsPerPage) {
+            project.style.display = 'block';
+        } else {
+            project.style.display = 'none';
+        }
+    });
+}
+
+// Función para actualizar la indicación de la página
+function updatePageIndicator() {
+    const currentPageElement = document.getElementById('currentPage');
+    const totalPagesElement = document.getElementById('totalPages');
+
+    currentPageElement.textContent = currentPage;
+    totalPagesElement.textContent = totalPages;
+}
+
+// Función para cambiar a la página siguiente
+function nextPage() {
+    if (currentPage < totalPages) {
+        currentPage++;
+        updateProjectsVisibility();
+        updatePageIndicator();
+    }
+}
+
+// Función para cambiar a la página anterior
+function prevPage() {
+    if (currentPage > 1) {
+        currentPage--;
+        updateProjectsVisibility();
+        updatePageIndicator();
+    }
+}
+
+// Llama a las funciones de inicialización
+updateProjectsVisibility();
+updatePageIndicator();
+    </script>
+<script>
+    const sidebar = document.querySelector('.sidebar');
+    const pageIndicator = document.querySelector('.page-indicator');
+
+    // Función para ajustar la posición del page indicator
+    function adjustPageIndicatorPosition() {
+        const sidebarWidth = sidebar.offsetWidth;
+        pageIndicator.style.left = sidebarWidth ? `${sidebarWidth}px` : '0';
+    }
+
+    // Ajusta la posición inicial
+    adjustPageIndicatorPosition();
+
+    // Escucha los cambios en el ancho del sidebar
+    window.addEventListener('resize', adjustPageIndicatorPosition);
+</script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    overflow-y:hidden;
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 80px;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Alinea el contenido en el centro verticalmente */
+    overflow: hidden;
+    transition: width 0.5s ease;
+    margin-top: -10px;
+}
+
+.sidebar:hover {
+    width: 250px;
+}
+
+.sidebar ul {
+        width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    white-space: nowrap;
+    overflow: hidden;   
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+
+.sidebar-info {
+    opacity: 0;
+    padding: 50px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center; /* Centra el texto horizontalmente */
+}
+.sidebar-info a {
+    display: block; /* Hace que el enlace ocupe toda la anchura del contenedor */
+    padding: 10px; /* Añade un espacio alrededor del enlace */
+    color: white; /* Color del texto */
+    text-decoration: none; /* Quita la subrayado predeterminado del enlace */
+    border-bottom: 1px solid #555; /* Añade un borde inferior para separar visualmente del contenido siguiente */
+}
+
+.sidebar-info a:hover {
+    background-color: #555; /* Cambia el color de fondo al pasar el ratón sobre el enlace */
+}
+.sidebar:hover .sidebar-info {
+    opacity: 1;
+}
+
+.content-container {
+    margin-top: 80px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.project {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.project-image-container {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 5px solid #333;
+    overflow: hidden;
+    transition: border 0.5s ease;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    filter: blur(3px);
+    transition: filter 0.3s;
+}
+
+.project-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.project-info h3,
+.project-info p {
+    margin: 0;
+}
+
+.project:hover .project-image {
+    filter: blur(0);
+}
+
+.project:hover .project-info {
+    opacity: 0;
+}
+
+.page-indicator {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    padding: 30px;
+    box-sizing: border-box;
+    transition: margin-left 0.5s ease;
+}
+
+.page-indicator button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.page-indicator button:hover {
+    background-color: #555;
+}
+.top-text {
+    text-align: center;
+    padding: 20px;
+    color: black;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 30px;
+    margin-top:-10px;
+    margin-bottom: -150px;
+}
