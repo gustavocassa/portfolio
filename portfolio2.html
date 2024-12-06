@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio.css">
+    <title>Portafolio</title>
+</head>
+<body>
+    <div id="sidebar">
+        <h2>Proyectos</h2>
+        <ul>
+            <li><a href="#project1">Proyecto 1</a></li>
+            <li><a href="#project2">Proyecto 2</a></li>
+            <li><a href="#project3">Proyecto 3</a></li>
+            <li><a href="#project4">Proyecto 4</a></li>
+            <li><a href="#project5">Proyecto 5</a></li>
+            <li><a href="#project6">Proyecto 6</a></li>
+            <li><a href="#project7">Proyecto 7</a></li>
+            <li><a href="#project8">Proyecto 8</a></li>
+        </ul>
+    </div>
+    <div class="content-container">
+        <div id="projects">
+            <div class="project" id="project1">
+                <h3>Título del Proyecto 1</h3>
+                <p>Descripción del Proyecto 1.</p>
+                <p>Fecha: Enero 2024</p>
+                <img src="proyecto1.jpg" alt="Descripción de la imagen del Proyecto 1">
+            </div>
+            <div class="project" id="project2">
+                <h3>Título del Proyecto 2</h3>
+                <p>Descripción del Proyecto 2.</p>
+                <p>Fecha: Febrero 2024</p>
+                <img src="proyecto2.jpg" alt="Descripción de la imagen del Proyecto 2">
+            </div>
+            <div class="project" id="project3">
+                <h3>Título del Proyecto 3</h3>
+                <p>Descripción del Proyecto 3.</p>
+                <p>Fecha: Marzo 2024</p>
+                <img src="proyecto3.jpg" alt="Descripción de la imagen del Proyecto 3">
+            </div>
+            <div class="project" id="project4">
+                <h3>Título del Proyecto 4</h3>
+                <p>Descripción del Proyecto 4.</p>
+                <p>Fecha: Abril 2024</p>
+                <img src="proyecto4.jpg" alt="Descripción de la imagen del Proyecto 4">
+            </div>
+            <div class="project" id="project5">
+                <h3>Título del Proyecto 5</h3>
+                <p>Descripción del Proyecto 5.</p>
+                <p>Fecha: Mayo 2024</p>
+                <img src="proyecto5.jpg" alt="Descripción de la imagen del Proyecto 5">
+            </div>
+            <div class="project" id="project6">
+                <h3>Título del Proyecto 6</h3>
+                <p>Descripción del Proyecto 6.</p>
+                <p>Fecha: Junio 2024</p>
+                <img src="proyecto6.jpg" alt="Descripción de la imagen del Proyecto 6">
+            </div>
+            <div class="project" id="project7">
+                <h3>Título del Proyecto 7</h3>
+                <p>Descripción del Proyecto 7.</p>
+                <p>Fecha: Julio 2024</p>
+                <img src="proyecto7.jpg" alt="Descripción de la imagen del Proyecto 7">
+            </div>
+            <div class="project" id="project8">
+                <h3>Título del Proyecto 8</h3>
+                <p>Descripción del Proyecto 8.</p>
+                <p>Fecha: Agosto 2024</p>
+                <img src="proyecto8.jpg" alt="Descripción de la imagen del Proyecto 8">
+            </div>
+        </div>
+        <div id="pagination">
+            <button id="prevBtn" onclick="prevPage()">Anterior</button>
+            <span id="pageIndicator"></span>
+            <button id="nextBtn" onclick="nextPage()">Siguiente</button>
+        </div>
+    </div>
+    <script src="portfolio.js"></script>
+</body>
+</html>
